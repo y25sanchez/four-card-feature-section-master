@@ -1,0 +1,227 @@
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body{
+    background-color: var(--Very-Light-Gray);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.container{
+    margin: 8rem auto;      
+}
+
+.container__header{
+    padding: 0 3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container__header h1{
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.container__header span{
+    font-weight: 200;
+}
+
+.container__header p{
+    color: var(--Grayish-Blue);
+    font-size: 1.rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.container__cards{
+    max-width: 50rem;
+    padding: 0 3.1rem;
+    margin: 9.2rem auto;
+}
+
+.container__cards__unit{
+    min-width: 22rem;
+    max-width: 50rem;
+    height: 22.2rem;
+}
+
+.container__cards__unit{
+    background-color: white;
+    height: 22.2rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 6px 18px 4px rgba(0,0,0,0.10);
+}
+
+.container__cards__unit h2{
+    font-size: 2rem;
+    padding: 3rem 2.9rem 0;
+    margin: 0;
+}
+
+.container__cards__unit p{
+    font-size: 1.3rem;
+    padding: 1rem 2.9rem 2.8rem;
+    line-height: 1.8;
+    color: var(--Grayish-Blue);
+    margin: 0;
+}
+
+.icon{
+    text-align: end;
+    padding: 0 2.8rem 0 0;
+
+}
+
+.Supervisor{
+    border-top: 5px solid var(--Cyan);
+    max-width: 50rem;
+}
+
+.Team_Builder{
+    border-top: 5px solid var(--Red);
+}
+
+.Karma{
+    border-top: 5px solid var(--Orange);
+}
+
+.Calculator{
+    border-top: 5px solid var(--Blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+  
+@media screen and (min-width:768px){
+    
+    .container__cards{
+        max-width: 70rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container__cards__unit{
+        max-width: 32rem;
+        margin: 1rem;
+    }
+
+    /*--------------Hover Effect--------------------*/
+
+    .Supervisor{
+        transition: all 0.3s ease;
+    }
+    .Calculator{
+        transition: all 0.3s ease;
+    }
+
+    .Team_Builder{
+        transition: all 0.3s ease;
+    }
+
+    .Karma{
+        transition: all 0.3s ease;
+    }
+    
+
+    .Supervisor:hover{
+        transform: scale(1.01);
+        right: 2rem;
+        border-top: 10px solid var(--Cyan);
+    }
+    .Supervisor img{
+        transition: all 0.3s ease;
+    }
+    .Supervisor:hover img{
+        transform: rotate(360deg);
+    }
+    
+
+
+    .Team_Builder:hover{
+        transform: scale(1.01);
+        right: 2rem;
+        border-top: 10px solid var(--Red);
+    }
+    .Team_Builder img{
+        transition: all 0.3s ease;
+    }
+    .Team_Builder:hover img{
+        transform: rotate(360deg);
+    }
+
+    
+
+    .Karma:hover{
+        transform: scale(1.01);
+        right: 2rem;
+        border-top: 10px solid var(--Orange);
+    }.Karma img{
+        transition: all 0.3s ease;
+    }
+    .Karma:hover img{
+        transform: rotate(360deg);
+    }
+
+
+
+    .Calculator:hover{
+        transform: scale(1.01);
+        right: 2rem;
+        border-top: 10px solid var(--Blue);
+    }
+    .container img{
+        transition: all 0.3s ease;
+    }
+    .Calculator:hover img{
+        transform: rotate(360deg);
+    }
+}   
+
+@media screen and (min-width:1054px){
+
+    .container__cards{
+        max-width: 100rem;
+
+        
+    }
+    .container__header{
+        padding: 0 28rem;
+    }
+    .container__header h1{
+        font-size: 3rem;
+    }
+
+    .container__cards__unit{
+        max-width: 31rem;
+
+        
+    }
+    
+    .Supervisor, .Karma{
+        margin-top: 12rem;
+    }
+
+    .Calculator{
+        margin-top: -10rem;
+
+    }
+
+} 
+
